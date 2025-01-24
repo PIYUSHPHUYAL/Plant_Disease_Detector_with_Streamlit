@@ -137,10 +137,10 @@ disease_recommendations = {
 # Streamlit app
 def main():
     inject_custom_css()
-    
+    st.set_page_config(page_title="Plant Disease Detection", page_icon="🌱", initial_sidebar_state="auto")
     st.markdown("""
         <div class="header">
-            <h1 style='font-size: 2.5rem; margin: 0;'>Plant Disease Detection</h1>
+            # <h1 style='font-size: 2.5rem; margin: 0;'>Plant Disease Detection</h1>
             <p style='color: #64748b; margin: 0.5rem 0;'>Upload a plant leaf image to detect potential diseases</p>
         </div>
     """, unsafe_allow_html=True)
